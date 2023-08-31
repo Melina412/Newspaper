@@ -31,9 +31,20 @@ body {
   background-color: #e9e9e0;
 }
 
+h1,
+h2,
+h3,
+h4,
+.ad-top p {
+  font-family: CormorantGaramond-Bold;
+}
+
+.image-text {
+  font-family: CormorantGaramond-Italic;
+}
+
 h1 {
   font-size: 3rem;
-  font-family: CormorantGaramond-Bold;
 }
 
 h1 span {
@@ -42,22 +53,23 @@ h1 span {
 
 h2 {
   font-size: 3.5rem;
-  font-family: CormorantGaramond-Bold;
 }
 
 h3 {
   font-size: 2.4rem;
-  font-family: CormorantGaramond-Bold;
 }
 
 h4 {
   font-size: 1.872rem;
-  font-family: CormorantGaramond-Bold;
 }
 
 p,
 header div {
   font-size: 1.6rem;
+}
+
+.ad-top p {
+  font-size: 5rem;
 }
 
 /* -------------------- header style -------------------- */
@@ -67,6 +79,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   row-gap: 2rem;
+  width: 100vw;
 }
 
 h1 {
@@ -85,18 +98,18 @@ header div {
 
 .page-flex {
   display: flex;
+  justify-content: flex-end;
 }
 
+.text-grid,
 .main-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 0 1rem;
 }
 
-.main-flex {
-  display: flex;
-  margin-right: 1rem;
+.text-grid {
+  margin: 0 1rem;
 }
 
 h2 {
@@ -104,8 +117,13 @@ h2 {
   padding: 2rem 0;
 }
 
-.image-text {
-  font-family: CormorantGaramond-Italic;
+.image img {
+  display: block;
+  max-width: 100%;
+}
+
+.image {
+  justify-self: flex-start;
 }
 
 /* -------------------- sidebar style -------------------- */
@@ -116,6 +134,7 @@ aside {
   text-align: center;
   gap: 2rem;
   margin: 2rem 1rem;
+  max-height: 80rem;
 }
 
 aside div {
@@ -127,11 +146,6 @@ aside div {
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-}
-
-.ad-top p {
-  font-family: CormorantGaramond-Bold;
-  font-size: 5rem;
 }
 
 a {
